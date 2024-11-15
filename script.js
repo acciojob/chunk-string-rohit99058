@@ -1,6 +1,6 @@
 function stringChop(str, size) {
   // your code here
-	if(str == 0 || str.length == null){
+	if(str == null || str.length == 0){
 		return []
 	}
 	if(str.length < size){
