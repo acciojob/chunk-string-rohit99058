@@ -12,8 +12,11 @@ function stringChop(str, size) {
 		temp += str.charAt(i)
 		if(temp.length==size){
 			ans.push(temp)
-			temp =""
+			temp = ""
 		}
+	}
+	if(temp != ""){
+		ans.push(temp)
 	}
 	return ans
 }
