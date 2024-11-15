@@ -1,9 +1,15 @@
 function stringChop(str, size) {
   // your code here
+	if(str == 0 || str == null){
+		return []
+	}
+	if(str.length < size){
+		return [str]
+	}
 	let ans =[]
 	let temp =""
 	for(let i=0; i<str.length; i++){
-		trmp+=str.charAt(i)
+		temp += str.charAt(i)
 		if(temp.length==size){
 			ans.push(temp)
 			temp =""
